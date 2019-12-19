@@ -15,23 +15,35 @@ btn_Genera.addEventListener('click',
     var fasciaEtaPasseggero = selectEta.value;
 
     var price1Km = 0.21;
+    var offerta = "Tariffa Standard";
+    var nCarrozza = Math.floor(Math.random() * 9 + 1);
+    var codiceCp = Math.floor(Math.random() * 10000 + 90001);
     var prezzoTotaleBiglietto = kmDaPercorrere * price1Km;
 
+    // Definisco se Minorenne o Over 65
     if (fasciaEtaPasseggero == "Minorenne") {
       prezzoTotaleBiglietto -= prezzoTotaleBiglietto * 0.2;
+      offerta = "Sconto Minorenne";
+
     } else if (fasciaEtaPasseggero == "Over 65"){
       prezzoTotaleBiglietto -= prezzoTotaleBiglietto * 0.4;
+      offerta = "Sconto Silver";
     }
 
-    var codiceCp = Math.floor(Math.Random()) * 10000 + 90001;
-    var nCarrozza = Math.floor(Math.Random()) * 9 + 1;
+    document.getElementById('nome_passeggero').innerHTML = nomePasseggero;
+    document.getElementById('offerta').innerHTML = offerta;
+    document.getElementById('carrozza').innerHTML = nCarrozza;
+    document.getElementById('codice_cp').innerHTML = codiceCp;
+    document.getElementById('costo_biglietto').innerHTML = prezzoTotaleBiglietto.toFixed(2) + " €";
 
-    console.log(nomePasseggero);
-    console.log(kmDaPercorrere);
-    console.log(fasciaEtaPasseggero);
-    console.log(codiceCp);
-    console.log(nCarrozza);
-    console.log(prezzoTotaleBiglietto);
+
+
+    // console.log(nomePasseggero);
+    // console.log(kmDaPercorrere);
+    // console.log(fasciaEtaPasseggero);
+    // console.log(codiceCp);
+    // console.log(nCarrozza);
+    // console.log(prezzoTotaleBiglietto);
 
 
 
