@@ -7,8 +7,70 @@
     <title>Biglietto del treno</title>
   </head>
   <body>
+    <div class="wrapper">
 
-    <div class="wrapper"></div>
+      <h1>Calcola il prezzo del tuo biglietto</h1>
+      <!-- Inserimento dati -->
+      <div id="container">
+        <div class="row">
+          <div class="col">
+            <input id="nome_pass" type="text" placeholder="Inserisci il tuo nome">
+          </div>
+          <div class="col">
+            <input id="km_da_percorrere" type="number" placeholder="Inserisci i Km" name="" value="">
+          </div>
+          <div class="col">
+            <select id="eta_pass" class="" name="">
+              <option value="">Minorenne</option>
+              <option value="">Maggiorenne</option>
+              <option value="">Over 65</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <button id="genera" type="button">Genera</button>
+          <button id="annulla" type="button">Annulla</button>
+        </div>
+
+      </div>
+
+      <h1>Il tuo biglietto</h1>
+
+      <!-- Biglietto generato -->
+      <div id="biglietto">
+      <div class="row_biglietto">
+
+        <div class="col_biglietto">
+          <p>Nome passeggero</p>
+          <p id="nome_passeggero">**</p>
+        </div>
+
+        <div class="col_biglietto">
+          <p>Offerta</p>
+          <p id="offerta">**</p>
+        </div>
+
+        <div class="col_biglietto">
+          <p>Carrozza</p>
+          <p id="carrozza">**</p>
+        </div>
+
+        <div class="col_biglietto">
+          <p>Codice CP</p>
+          <p id="codice_cp">**</p>
+        </div>
+        
+        <div class="col_biglietto">
+          <p>Costo biglietto</p>
+          <p id="costo_biglietto">**</p>
+        </div>
+
+      </div>
+
+      </div>
+    </div>
+
 
 
     <script src="js/script.js" charset="utf-8"></script>

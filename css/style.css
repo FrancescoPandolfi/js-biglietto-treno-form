@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #902b2b;
+  text-align: center;
+  margin-top: 40px;
+}
+h1 {
+  color: white;
+}
+.wrapper {
+  width: 80%;
+  margin: 20px auto;
+}
+#container {
+  margin-top: 20px;
+  padding: 40px 0;
+  background-color: #fffdec
+}
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+
+#biglietto {
+  background-color: #fffdec
+}
+
+.row_biglietto {
+  display: flex;
+  text-align: left;
+}
+.col_biglietto {
+  padding: 20px;
+}
