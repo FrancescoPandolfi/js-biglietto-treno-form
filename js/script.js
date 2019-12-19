@@ -15,11 +15,11 @@ btn_Genera.addEventListener('click',
     var kmDaPercorrere = parseInt(inputKm.value);
     var fasciaEtaPasseggero = selectEta.value;
 
-    var price1Km = 0.21;
+    var prezzoAlKm = 0.21;
     var offerta = "Tariffa Standard";
     var nCarrozza = Math.floor(Math.random() * 9 + 1);
     var codiceCp = Math.floor(Math.random() * 10000 + 90001);
-    var prezzoTotaleBiglietto = kmDaPercorrere * price1Km;
+    var prezzoTotaleBiglietto = kmDaPercorrere * prezzoAlKm;
 
     // Definisco se Minorenne o Over 65
     if (fasciaEtaPasseggero == "Minorenne") {
@@ -43,7 +43,6 @@ btn_Genera.addEventListener('click',
 btn_Annulla.addEventListener('click',
   function() {
 
-    document.getElementById('biglietto').classList = "hide"
     document.getElementById('biglietto').classList = "hide"
 
 
