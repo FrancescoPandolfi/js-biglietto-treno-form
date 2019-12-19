@@ -36,7 +36,6 @@ btn_Genera.addEventListener('click',
     document.getElementById('carrozza').innerHTML = nCarrozza;
     document.getElementById('codice_cp').innerHTML = codiceCp;
     document.getElementById('costo_biglietto').innerHTML = prezzoTotaleBiglietto.toFixed(2) + " €";
-
   }
 );
 

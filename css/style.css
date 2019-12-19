@@ -38,21 +38,53 @@ input {
   height: 25px;
   width: 140px;
   text-align: center;
-}
-select {
-  margin-top: 20px;
-  height: 25px;
-  width: 100px;
+  border: 1px solid #902b2b;
+  border-radius: 5px;
 }
 input::placeholder {
   text-align: center;
   font-size: 13px;
 }
-button {
-  padding: 5px 10px;
-  margin: 0 10px;
+input:focus,
+select:focus,
+select:focus::placeholder,
+input:focus::placeholder {
+  background-color: #902b2b;
+  color: white;
+}
+select {
+  margin-top: 20px;
+  height: 25px;
+  width: 100px;
+  border: 1px solid #902b2b;
   border-radius: 5px;
 }
+button {
+  padding: 10px 15px;
+  margin: 0 10px;
+  border-radius: 8px;
+  border: 1px solid #5d5d5d;
+  font-weight: 700
+}
+#genera {
+  background-color: #902b2b;
+  color: white;
+  border: 0;
+  transition: 0.3s;
+}
+#genera:hover {
+  opacity: 0.9;
+}
+#annulla {
+  background-color: #c8c8c8;
+  color: #902b2b;
+  transition: 0.3s;
+}
+#annulla:hover {
+  background-color: #656565;
+  color: white;
+}
+
 
  /* Biglietto generato  */
 #biglietto {
@@ -75,7 +107,7 @@ button {
 .row_biglietto {
   display: flex;
   text-align: left;
-  padding: 30px 0;
+  height: 150px;
 }
 .col_biglietto {
   padding: 20px;
