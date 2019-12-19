@@ -4,6 +4,7 @@ var btn_Annulla = document.getElementById('annulla');
 btn_Genera.addEventListener('click',
   function() {
 
+    document.getElementById('biglietto').classList = "show"
     // Raccolgo gli elementi nelle variabili
     var inputNome = document.getElementById('nome_pass');
     var inputKm = document.getElementById('km_da_percorrere');
@@ -36,28 +37,15 @@ btn_Genera.addEventListener('click',
     document.getElementById('codice_cp').innerHTML = codiceCp;
     document.getElementById('costo_biglietto').innerHTML = prezzoTotaleBiglietto.toFixed(2) + " €";
 
+  }
+);
 
+btn_Annulla.addEventListener('click',
+  function() {
 
-    // console.log(nomePasseggero);
-    // console.log(kmDaPercorrere);
-    // console.log(fasciaEtaPasseggero);
-    // console.log(codiceCp);
-    // console.log(nCarrozza);
-    // console.log(prezzoTotaleBiglietto);
-
-
+    document.getElementById('biglietto').classList = "hide"
+    document.getElementById('biglietto').classList = "hide"
 
 
   }
 );
-
-
-
-
-
-// Condizione per determinare se ha diritto ad uno sconto
-
-
-// document.getElementById('numofkm').innerHTML = numKm;
-// document.getElementById('agepass').innerHTML = passengerAge;
-// document.getElementById('price').innerHTML = totPrice;

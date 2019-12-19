@@ -38,3 +38,11 @@ h1 {
 .col_biglietto {
   padding: 20px;
 }
+.hide {
+  opacity: 0;
+  transition: 0.2s
+}
+.show {
+  opacity: 1;
+  transition: 0.2s
+}
